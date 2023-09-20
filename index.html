@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>E-mail Sidebar</title>
+    <script src="javascript.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="nav">
+        <div class="menu-btn">
+          <div class="btn-line"></div>
+          <div class="btn-line"></div>
+          <div class="btn-line"></div>
+          <span class="tooltiptext">Main menu</span>
+        </div>
+        <div class="logo">📬 Mail App</div>
+      </div>
+
+      <div class="compose">
+        <img src="edit-pencil.svg" />
+        Compose
+      </div>
+
+      <app-sidebar-button class="active" text="Inbox" unreadCount="0">
+        <span slot="icon">📥</span>
+      </app-sidebar-button>
+
+      <app-sidebar-button text="Starred" unreadCount="0">
+        <span slot="icon">⭐️</span>
+      </app-sidebar-button>
+
+      <app-sidebar-button text="Snoozed" unreadCount="0">
+        <span slot="icon">⏱</span>
+      </app-sidebar-button>
+
+      <app-sidebar-button text="Sent" unreadCount="0">
+        <span slot="icon">➡️</span>
+      </app-sidebar-button>
+
+      <app-sidebar-button text="Drafts" unreadCount="1">
+        <span slot="icon">📄</span>
+      </app-sidebar-button>
+    </div>
+  </body>
+</html>
